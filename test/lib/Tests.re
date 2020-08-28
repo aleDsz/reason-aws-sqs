@@ -1,0 +1,1 @@
+ReasonAwsSqsTestLib.Setup.cli();
