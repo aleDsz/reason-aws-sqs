@@ -12,6 +12,7 @@
   "scripts": {
     "test": "esy dune exec test/Tests.exe",
     "doc": "esy dune build @doc",
+    "utop": "esy dune utop lib -- -implicit-bindings"
   },
   "dependencies": {
     "@esy-ocaml/reason": "3.6.0",
