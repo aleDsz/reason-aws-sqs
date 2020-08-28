@@ -1,0 +1,6 @@
+{
+  "ocaml.sandbox": {
+    "kind": "esy",
+    "root": "/home/aledsz/github/aledsz/reason-aws-sqs"
+  }
+}
