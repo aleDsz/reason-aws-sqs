@@ -1,0 +1,12 @@
+(library
+ (name ReasonAwsSqsTestLib)
+ (modules
+  (:standard \ Tests))
+ (library_flags
+  (-linkall -g))
+ (libraries rely.lib))
+
+(executable
+ (name Tests)
+ (modules Tests)
+ (libraries ReasonAwsSqsTestLib))
