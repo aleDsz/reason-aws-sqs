@@ -1,0 +1,5 @@
+(library
+ (name reason_aws_sqs)
+ (libraries)
+ (preprocess
+  (pps ppx_deriving_yojson)))
