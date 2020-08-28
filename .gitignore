@@ -1,3 +1,41 @@
-_esy
-node_modules
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# Merlin configuring file for Vim and Emacs
 .merlin
+
+# Dune generated files
+*.install
+
+# Local OPAM switch
+_opam/
+
+# Esy generated files
+_esy/
+_release/
+_export/
+npm-debug.log
+yarn-error.log
+node_modules/
+
+/bundledOutputs/
+npm-debug.log
+.DS_Store
+.bsb.lock
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+
+# Vim
+.*.swp
