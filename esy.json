@@ -20,7 +20,10 @@
     "ocaml": "4.10.0"
   },
   "devDependencies": {
+    "@opam/merlin": "*",
     "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+    "@reason-native/pastel": "^0.3.0",
+    "@reason-native/rely": "^3.2.1",
     "@opam/odoc": "*",
     "@opam/utop": "*"
   }
