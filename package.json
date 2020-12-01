@@ -4,25 +4,25 @@
   "description": "Amazon AWS SQS library for ReasonML",
   "license": "MIT",
   "esy": {
-    "build": "dune build -p reason-aws-sqs",
+    "build": "refmterr dune build -p reason-aws-sqs",
     "buildEnv": { "ODOC_SYNTAX": "re" },
-    "release": {
-      "releasedBinaries": [ "ReasonAwsSqsTest.exe" ],
-      "lib": [ "ReasonAwsSqs" ]
-    }
+    "release": { "bin": [ "ReasonAwsSqs.exe" ] },
+    "install": [ "esy-installer reason-aws-sqs.install" ]
   },
   "scripts": {
     "watch": "esy dune build --watch",
     "test": "esy x RunTests.exe",
     "doc": "esy dune build @doc",
-    "start": "esy rtop -init lib/Reason_aws_sqs.re -show-reserved -implicit-bindings"
+    "start":
+      "esy rtop -init lib/Reason_aws_sqs.re -show-reserved -implicit-bindings"
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.2",
     "@opam/dune": "2.7.1",
     "@opam/lwt": "5.3.0",
     "@opam/ppx_deriving_yojson": "3.6.1",
-    "ocaml": "4.10.0"
+    "ocaml": "4.10.0",
+    "refmterr": "^3.3.2"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "1.3.0",
