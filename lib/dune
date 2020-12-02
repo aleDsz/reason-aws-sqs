@@ -1,5 +1,6 @@
 (library
- (name reason_aws_sqs)
+ (public_name reason-aws-sqs)
+ (name ReasonAwsSqs)
  (libraries)
  (preprocess
   (pps ppx_deriving_yojson)))
